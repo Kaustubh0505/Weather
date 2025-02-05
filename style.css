@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.main{
+    /* border:2px solid black; */
+    height:820px;
+    margin:10px;
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    
+    
+    
+}    
+body{
+    background-color:#222;
+}
+
+.container{
+    height:85%;
+    width:500px;
+    margin-top:30px;
+    background: linear-gradient(135deg, #01205a, #4255d2);
+    border-radius: 10px;
+}
+.nav{
+    height: 15%;
+    margin-left:-20px;
+    margin-top:10px;
+    display: flex;
+}
+input{
+    margin-top:15px;
+    margin-left:45px;
+    border-radius: 50px;
+    border:none;
+    padding:15px 150px 25px 15px;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+.nav img{
+    margin-top:10px;
+}
+
+button{
+    height:70px;
+    width:70px;
+    border-radius: 70px;
+    border: none;
+    margin-top:10px;
+    margin-left:20px;
+    cursor: pointer;
+}
+.err p{
+    font-family: Montserrat;
+    color:beige;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+
+
+.img {
+    margin-left:150px;
+    margin-top:-30px;
+}
+
+.degree{
+    text-align: center;
+    font-size: 45px;
+    margin-top:-15px;
+    font-family: Montserrat;
+    color:rgb(239, 230, 219);
+}
+.city{
+    text-align: center;
+    font-size: 45px;
+    margin-top:20px;
+    font-family: Montserrat;
+    color:rgb(239, 230, 219);
+}
+
+.details{
+    margin-top:50px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    color: beige;
+    font-size: 20px;
+}
+
+.col img{
+    width:45px;
+    margin-right:10px;
+}
+
+
+.weather{
+    display: none;
+}
