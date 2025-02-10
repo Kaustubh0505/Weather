@@ -3,6 +3,7 @@
 *{
     margin:0px;
     padding:0px;
+    font-family: Montserrat;
 }
 
 .main{
@@ -40,7 +41,6 @@ input{
     border:none;
     padding:15px 150px 25px 15px;
     font-size: 20px;
-    font-family: Montserrat;
 }
 
 .nav img{
@@ -58,7 +58,6 @@ button{
 }
 .htw{
     text-align: center;
-    font-family: Montserrat;
     color:azure;
     font-size: 40px;
     font-weight: bold;
@@ -74,14 +73,12 @@ button{
     text-align: center;
     font-size: 45px;
     margin-top:-15px;
-    font-family: Montserrat;
     color:rgb(239, 230, 219);
 }
 .city{
     text-align: center;
     font-size: 45px;
     margin-top:20px;
-    font-family: Montserrat;
     color:rgb(239, 230, 219);
 }
 
@@ -94,7 +91,6 @@ button{
 .col{
     display: flex;
     justify-content: center;
-    font-family: Montserrat;
     color: beige;
     font-size: 20px;
 }
@@ -107,4 +103,21 @@ button{
 
 .weather{
     display: none;
+}
+
+.apiclass{
+
+    color:azure;
+    font-size: 25px;
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.scale{
+    text-align: right;
+    background-color: azure;
+    padding-right:30px;
+    font-weight: bold;
 }

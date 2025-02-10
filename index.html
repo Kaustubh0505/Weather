@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
         <div class="container">
@@ -16,47 +18,56 @@
                 <button onclick=weather()>
 
                     <img class="ser" src="imgs/search.png">
-                    
+
                 </button>
             </div>
 
-<div class="weather">
-    <div class="htw">
-        Cloudy
+            <div class="weather">
+                <div class="htw">
+                    Cloudy
+                </div>
+
+                <div class="img">
+                    <img class="icon" src="imgs/clear.png">
+                </div>
+
+
+
+                <h1 class="degree">22°C</h1>
+                <h2 class="city">Bengluru</h2>
+
+
+                <div class="details">
+                    <div class="col">
+                        <img src="imgs/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="imgs/wind.png">
+                        <div>
+                            <p class="wind">15 Km/h</p>
+                            <p>Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apiclass"><p>
+                    AQI:</p><p id="api">314</p>
+                </div>
+        
+
+
+            </div>
+        </div>
     </div>
-    
-            <div class="img">
-                <img class="icon" src="imgs/clear.png">
-            </div>
-
-
-
-            <h1 class="degree">22°C</h1>
-            <h2 class="city">Bengluru</h2>
-
-
-<div class="details">
-        <div class="col">
-            <img src="imgs/humidity.png">
-            <div>
-                <p class="humidity">50%</p>
-                <p>Humidity</p>
-            </div>
-        </div>    
-
-        <div class="col">
-            <img src="imgs/wind.png">
-            <div>
-                <p class="wind">15 Km/h</p>
-                <p>Wind speed</p>
-            </div>
-        </div>
-</div>
-
-
-</div>
-        </div>
+    <div class="scale">
+        The AQI scale is of World standards
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

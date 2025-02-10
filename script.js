@@ -17,6 +17,18 @@ async function weather(){
         document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h"
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%"
 
+
+
+        var lat = data.coord.lat
+        var lon = data.coord.lon
+
+        var aqimake = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=58eab29ad0114e147deccc6494ef9c81`)
+        let aqimakee = await aqimake.json()
+
+        const aqivalue = aqimakee.list[0].main.aqi
+
+        document.getElementById("api").innerHTML = aqivalue;
+
     
     
         if(data.weather[0].main=="Clear"){
@@ -61,5 +73,6 @@ async function weather(){
         }
     
         document.querySelector(".weather").style.display = "block";
+
 
     }
