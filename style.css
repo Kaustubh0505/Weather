@@ -6,19 +6,19 @@
 }
 
 .main{
-    /* border:2px solid black; */
     height:820px;
     margin:10px;
     display: grid;
     justify-content: center;
-    /* align-items: center; */
     
-    
-    
-}    
-body{
-    background-color:#222;
 }
+body {
+    background: linear-gradient(135deg, #115cff, #76bec8, #0fc2e6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 .container{
     height:85%;
@@ -56,14 +56,13 @@ button{
     margin-left:20px;
     cursor: pointer;
 }
-.err p{
+.htw{
+    text-align: center;
     font-family: Montserrat;
-    color:beige;
-    display: flex;
-    justify-content: center;
-    display: none;
+    color:azure;
+    font-size: 40px;
+    font-weight: bold;
 }
-
 
 
 .img {
