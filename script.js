@@ -6,9 +6,12 @@ const weather_icon = document.querySelector(".icon")
 async function weather(){
     var city = document.getElementById("name").value
     if (!city){
-        alert("Enter city name!!")
+        return alert("Enter city name!!")
     }
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
+        if(!response.ok){
+            return alert("Enter valid city name")
+        }
 
         var data = await response.json();
     
@@ -71,8 +74,12 @@ async function weather(){
             document.querySelector(".htw").innerHTML = "Snow"
 
         }
+        else{
+            document.querySelector(".htw").innerHTML = data.weather[0].main
+
+        }
     
         document.querySelector(".weather").style.display = "block";
-
+        console.log(data)
 
     }
