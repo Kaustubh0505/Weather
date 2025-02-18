@@ -80,6 +80,12 @@ async function weather(){
         }
     
         document.querySelector(".weather").style.display = "block";
-        console.log(data)
+
 
     }
+
+window.addEventListener("keyup",function(e){
+    if(e.keyCode===13){
+        weather()
+    }
+})
