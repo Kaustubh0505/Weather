@@ -14,10 +14,16 @@
     
 }
 body {
-    background: linear-gradient(135deg, #081e4e, #76bec8, #0b89a2);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(145deg, #081e4e, #76bec8, #0b89a2);
+    animation: move 10s ease infinite;
+}
+
+
+
+@keyframes move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 
@@ -53,7 +59,7 @@ button{
     border-radius: 70px;
     border: none;
     margin-top:10px;
-    margin-left:20px;
+    margin-left:10px;
     cursor: pointer;
 }
 .htw{
